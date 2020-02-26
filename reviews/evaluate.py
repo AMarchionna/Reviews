@@ -71,6 +71,8 @@ class Evaluate:
 
         self.X_train = X_train.toarray()
         self.X_test = X_test.toarray()
+        print(self.X_train, self.y_train)
+        print(self.X_test, self.y_test)
 
     def set_PCA(self, components):
         '''

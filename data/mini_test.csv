@@ -1,0 +1,9 @@
+id,type,review,label
+1,train,"Bad bad bad",neg
+2,train,"Very bad",neg
+3,train,"good gOOd",pos
+4,train,"Very nice and good",pos
+5,train,"Nice nice",pos
+6,test,"It was good.",pos
+7,test,"It was very bad",neg
+8,test,"Vey very very bad",neg

@@ -61,12 +61,10 @@ class KNNClassifier:
         sum = 0  # Calculate the amount of ones predicted.
         for value in classify:
             sum = sum + value
-        if 2*sum > len(classify):  # More ones than zeros predicted.
+        if 2*sum >= len(classify):  # More ones than zeros predicted.
             return 1
-        elif 2*sum < len(classify):  # More zeros than ones predicted
+        else:  # More zeros than ones predicted
             return 0
-        else:  # If there is a tie, return random.
-            return random.randint(0, 1)
 
     def predict(self, data_test):
         '''
