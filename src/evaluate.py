@@ -71,7 +71,8 @@ class Evaluate:
         '''Calculates the accuracy of the model.'''
         print("Calculating the score of the model...")
         score = self.knn.score(self.X_test_red, self.y_test)
-        print("The accuracy when the number of components is {:d} and the",
+        print("The accuracy when the number of components is {:d} and the"
+              .format(self.components),
               "number of neighbours is {:d}, is {:.4f}"
-              .format(self.components, self.neighbours, score))
+              .format(self.neighbours, score))
         return score
