@@ -1,5 +1,4 @@
 import sys
-# insert at 1, 0 is the script path (or '' in REPL)
 sys.path.insert(0, '/home/agustin/git_repo/Reviews')
 from reviews.evaluate import Evaluate
 
