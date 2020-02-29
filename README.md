@@ -4,7 +4,7 @@ To run the model, use the run notebook.
 
 To run the tests, open a terminal in the root directory and use the following commands:
 
-coverage run -m pytest tests/evaluate_test.py tests/pca_test.py tests/knn_test.py
+coverage run -m pytest tests/test_evaluate.py tests/test_pca.py tests/test_knn.py
 
 coverage report
 
