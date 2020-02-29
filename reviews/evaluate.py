@@ -1,5 +1,4 @@
-from reviews.models import KNNClassifier
-from reviews.models import PCA
+from reviews.models import KNNClassifier, PCA
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 
