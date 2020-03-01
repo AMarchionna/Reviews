@@ -53,9 +53,9 @@ class Evaluate:
         text_test = text_test[0: self.max_test]
         label_test = label_test[0: self.max_test]
 
-        print("Number of training reviews = {}".
+        print("Number of training reviews: {}".
               format(len(text_train)))
-        print("Number of test reviews = {}".format(len(text_test)))
+        print("Number of test reviews: {}".format(len(text_test)))
 
         # Pick the word phrases that appear in reviews.
         vectorizer = CountVectorizer(max_df=self.max_df, min_df=self.min_df,
@@ -70,8 +70,6 @@ class Evaluate:
 
         self.X_train = X_train.toarray()
         self.X_test = X_test.toarray()
-        print(self.X_train, self.y_train)
-        print(self.X_test, self.y_test)
 
     def set_PCA(self, components):
         '''
